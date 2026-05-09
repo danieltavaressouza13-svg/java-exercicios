@@ -1,9 +1,21 @@
 package entites;
 
 public class Product {
+    //ATRIBUTOS
+
     public String name;
     public double price;
     public int quantity;
+
+//CONSTRUTORES
+
+    public Product(String name, double price, int quantity) {
+        this.name = name;
+        this.price = price;
+        this.quantity = quantity;
+    }
+
+//MÉTODOS
 
     public double totalValueInStock(){
         return price * quantity;
